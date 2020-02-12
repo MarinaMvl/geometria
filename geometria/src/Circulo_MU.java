@@ -7,6 +7,8 @@ public class Circulo_MU extends FiguraGeometrica_MU {
 	public Circulo_MU(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if (radio<0) {
+			radio=radio*(-1);}
 	}
 
 	@Override
